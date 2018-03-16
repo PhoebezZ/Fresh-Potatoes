@@ -6,7 +6,7 @@ flask,
 flask_mail, 
 requests, 
 bs4, 
-sqlite3, 
+sqlite3
 
 Go to the Freshpotatoes folder and run “python control.py” in command line
 Then open the browser and user address ‘localhost:5000’
