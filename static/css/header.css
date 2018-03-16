@@ -1,0 +1,102 @@
+* {  
+  margin: 0;  
+  padding: 0;  
+  border: 0;  
+  font: inherit;  
+  font-size: 100%;  
+  vertical-align: baseline;  
+}
+
+body {
+    user-select: none;
+    height: auto;
+    font-family: "Lucida", Sans-serif;
+}
+/************ -HEADER- *************/
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: #002B4C; /*header color*/
+}
+
+.actual_header {
+    width: 1152px;
+    height: auto;
+    margin: auto;
+}
+
+.logo {
+    height: 100%;
+    width: 30%;
+    float: left;
+    background-color: #002B4C;
+}
+
+.potato_img {
+    height: 100%;
+    width: 100px;
+    float: left;
+    margin-left: 1em;
+}
+
+.potato_img img {
+    height: 100%;
+    width: 100%;
+}
+
+.web_name {
+    height: 70px;
+    width: auto;
+    float: left;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.web_name p {
+    font-size: 1.6em;
+    color: snow;
+}
+
+.web_name a {
+    font-family: "Lucida", Sans-serif;
+    text-decoration: none;
+    color: snow;
+}
+
+.web_name a:hover, a:visited, a:active {
+    color: snow;
+}
+
+.navigation {
+    height: 100%;
+    width: 70%;
+    float: left;
+    background-color: #FFD459;
+}
+
+.navi_item {
+    height: 100%;
+    width: 100%;
+    float: right;
+}
+
+.navi_item ul li {
+    list-style-type: none;
+    margin-top: 40px;
+    margin-right: 1.1em;
+    float: right;
+    font-family: "Lucida", Sans-serif;
+    font-size: 1.3em;
+}
+
+.navi_item a {
+    text-decoration: none;
+}
+
+.navigation a {
+    color: #808080;
+}
+
+.navigation a:hover, a:active {
+    color: #002B4C;
+}

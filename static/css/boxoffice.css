@@ -1,0 +1,361 @@
+* {  
+  margin: 0;  
+  padding: 0;  
+  border: 0;  
+  font: inherit;  
+  font-size: 100%;  
+  vertical-align: baseline;  
+}
+
+body {
+    user-select: none;
+}
+/*box office*/
+.navi_box_office a {
+    color: #002B4C;
+}
+
+.title_box {
+    color: snow;
+}
+
+.title_office {
+    color: #FFD459;
+}
+
+
+/*box_office_detail*/
+.box_office_detail {
+    position: absolute;
+    width: 1024px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*box office header*/
+.bod_header {
+    height: 10%;
+    width: 100%;
+    border-bottom: 0.3em solid #FFD459;
+    background-color: #002B4C;
+}
+
+.bod_header ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    margin-top: 0.5em;
+    color: snow;
+}
+
+/*box office header item*/
+.rank {
+    width: 5%;
+    margin-left: 0.2em;
+}
+
+.title {
+    width: 60%;
+    text-align: center;
+}
+
+.lifetime_gross {
+    width: 19%;
+    text-align: center;
+}
+
+.studio {
+    width: 7%;
+    text-align: center;
+}
+
+.year {
+    float: right;
+    width: 5%;
+    text-align: right;
+    margin-right: 0.2em;
+}
+
+/*box office content*/
+.bod_content {
+    height: 100%;
+    width: 100%;
+    /*background-color: chartreuse;*/
+}
+
+.content_frame_ww, .content_frame_sub, .content_frame_sub_intheatre {
+    height: auto;
+    width: 100%;
+}
+
+.content_frame_sub, .content_frame_sub_intheatre, .content_frame_ww {
+    border-bottom: 0.1em solid gray; /*#002B4C*/
+}
+
+.content_frame_sub_intheatre {
+    background-color: #FFD459;
+}
+
+.content_frame ul li, .content_frame_sub ul li, .content_frame_sub_intheatre ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*Domestic ranked movie items*/
+.rank_item {
+    width: 5%;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.title_item {
+    width: 60%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.lifetime_gross_item {
+    width: 19%;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.studio_item {
+    width: 7%;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.year_item {
+    float: right;
+    width: 5%;
+    text-align: right;
+    font-size: 1em;
+    font-weight: bold;
+}
+/* World wide box office header item */
+.bod_header_ww {
+    height: 10%;
+    width: 100%;
+    border-bottom: 0.3em solid #FFD459;
+    background-color: #002B4C;
+}
+
+.bod_header_ww ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    margin-top: 0.5em;
+    color: snow;
+}
+
+.content_frame_ww ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.ww_rank {
+    width: 5%;
+    margin-left: 0.2em;
+}
+
+.ww_title {
+    width: 45%;
+    text-align: center;
+}
+
+.ww_gross {
+    width: 11%;
+    text-align: center;
+}
+
+.ww_domestic {
+    width: 7%;
+    text-align: center;
+}
+
+.ww_do_percent {
+    width: 5%;
+    text-align: center;
+}
+
+.ww_oversea {
+    width: 7%;
+    text-align: center;
+}
+
+.ww_os_percent {
+    width: 5%;
+    text-align: center;
+}
+
+.ww_studio {
+    width: 7%;
+    text-align: center;
+}
+
+.ww_year {
+    width: 4%;
+    float:right;
+    margin-right: 0.1em;
+}
+
+/*worldwide movie item*/
+.ww_rank_item {
+    width: 5%;
+    margin-left: 0.2em;
+}
+
+.ww_title_item {
+    width: 45%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ww_gross_item {
+    width: 11%;
+    text-align: center;
+}
+
+.ww_domestic_item {
+    width: 7%;
+    text-align: center;
+}
+
+.ww_do_percent_item {
+    width: 5%;
+    text-align: center;
+}
+
+.ww_oversea_item {
+    width: 7%;
+    text-align: center;
+}
+
+.ww_os_percent_item {
+    width: 5%;
+    text-align: center;
+}
+
+.ww_studio_item {
+    width: 7%;
+    text-align: center;
+}
+
+.ww_year_item {
+    width: 4%;
+    float:right;
+}
+
+
+
+
+/*weekend movie header and item*/
+.wknd_rank {
+    width: 7%;
+    margin-left: 0.2em;
+}
+
+.wknd_title {
+    width: 40%;
+    text-align: center;
+}
+
+.wknd_weekend {
+    width: 21%;
+    text-align: center;
+}
+
+.wknd_lifetime {
+    width: 21%;
+    text-align: center;
+}
+
+.wknd_studio {
+    width: auto;
+    float:right;
+    margin-right: 0.2em;
+}
+
+.wknd_rank_item {
+    width: 7%;
+    margin-left: 0.2em;
+    font-size: 1em;
+}
+
+.wknd_title_item {
+    width: 40%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.wknd_weekend_item {
+    width: 21%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.wknd_lifetime_item {
+    width: 21%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.wknd_studio_item {
+    width: 7%;
+    float:right;
+    font-size: 1em;
+}
+/*content*/
+.wwd_movie_title {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.wwd_movie_item {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.wwd_movie_title ul li{
+    display: inline-block;
+    margin:2em;
+}
+
+.wwd_movie_item ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 2em;
+}
+
+/*box office category navigation*/
+.cate_item {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+.cate_item ul li {
+    display: inline-block;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 1em 2em;
+    margin-bottom: 1em;
+    color: black;
+}

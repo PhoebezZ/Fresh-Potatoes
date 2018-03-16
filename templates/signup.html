@@ -1,0 +1,113 @@
+{% extends "content_base.html" %}
+
+<!--css-->
+{% block navi_css %}
+    <link href="../static/css/gallery.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+<!--content_header_title-->
+{% block content_header_title %}
+    <p class="title_Signup">Sign Up</p>
+{% endblock %}
+
+<!--content_header_description-->
+{% block content_header_description %}
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #002B4C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 100%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 20px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+
+<body>
+
+<form action="/signup" method="post" style="border:1px solid #ccc; margin-top: 5em;">
+  <div class="container" style="margin-top: 2em;">
+    <input type="text" placeholder="Enter username" name="username" required>
+
+    {%if insert%}
+      <table style="width:100%;">
+        <td>Exist username, please enter another username</td>
+      </table>
+    {%endif%}
+
+    <input type="password" placeholder="Enter Password" name="password" required>
+    
+    <a href="login" style="color:dodgerblue">Log in here</a>
+
+    <div class="clearfix">
+      <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+
+  </div>
+</form>
+
+</body>
+{% endblock %}
+

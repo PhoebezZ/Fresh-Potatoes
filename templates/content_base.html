@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+<!--content base-->
+<!--Define the general of content header-->
+
+{% block css_content %}
+    <link href="../static/css/content_header.css" rel="stylesheet" type="text/css">
+
+    {% block navi_css %}
+    
+    {% endblock %}
+
+{% endblock %}
+
+
+{% block content %}
+    <div class="content">
+        
+        <!--The header of box_office page-->
+        <div class="content_header">
+            {% block content_img %}
+
+            {% endblock %}
+            
+            <div class="content_header_text">
+                <div class="content_header_title">
+                    {% block content_header_title %}
+
+                    {% endblock %}
+                </div>
+                    
+                <div class="content_header_description">
+                    {% block content_header_description %}
+                    
+                    {% endblock %}
+                </div>
+            </div>    
+        </div>
+        
+        {% block content_detail %}
+        
+        {% endblock %}
+        
+    </div>  
+{% endblock %}

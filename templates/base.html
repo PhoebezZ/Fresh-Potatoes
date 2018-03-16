@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <!--This is the base template-->
+        <!--Base template contains header and footer-->
+        <!--If has title parameter then change title-->
+        {% if title %}
+        <title>{{title}}</title>
+        {% else %}
+        <title>Fresh Potatoes</title>
+        {% endif %}
+        
+        <link href="../static/css/header.css" rel="stylesheet" type="text/css">
+        <link href="../static/css/footer.css" rel="stylesheet" type="text/css">
+        <!--This block is for adding new css file-->
+        {% block css_content %}
+
+        {% endblock %}  
+    </head>
+    
+    <body>
+        <!--Following contents are the header and navigation bar-->
+        <div class="header">
+        
+            <div class="actual_header">
+                <!--Showing the website logo-->
+                <div class="logo">               
+                    <div class="potato_img">
+                        <img src="../static/images/fp_no_name_logo.png">
+                    </div>
+                
+                    <div class="web_name">
+                        <p><a href="/index">FRESH</a></p>
+                        <p><a href="/index">POTATOES</a></p>
+                    </div>
+                </div>
+                
+                <!--Showing the navigation-->
+                <div class="navigation">
+                    <div class="navi_item">
+                        <ul>
+                            <li class="navi_about"><a href="/about">ABOUT</a></li>
+                            <li class="navi_ticket"><a href="/ticket">TICKETS</a></li>
+                            <li class="navi_gallery"><a href="/gallery">GALLERY</a></li>
+                            <li class="navi_genre"><a href="/search">SEARCH</a></li>
+                            <li class="navi_box_office"><a href="/boxoffice/domestic">BOX OFFICE</a></li>
+                        </ul>
+                    </div> 
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <!--The following contents are the content part-->
+        {% block content %}
+        
+        {% endblock %}
+        
+    </body>
+</html>

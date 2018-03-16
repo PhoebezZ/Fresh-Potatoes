@@ -1,0 +1,38 @@
+{% extends "boxoffice.html" %}
+
+<!--category css-->
+
+<!--detail-->
+{% block threepages %}
+
+<div class="box_office_detail">
+                <div class="bod_header">
+                    <ul>
+                        <li class="wknd_rank">RANK</li>
+                        <li class="wknd_title">TITLE</li>
+                        <li class="wknd_weekend">WEEKEND GROSS</li>
+                        <li class="wknd_lifetime">LIFETIME GROSS</li>
+                        <li class="wknd_studio">STUDIO</li>
+                    </ul>
+                </div>
+                
+                <div class="bod_content">
+
+                    {% for movie in movies %}
+                        <!--id, rank, title, lifetimegross, studio, year, onshow-->
+
+                        <div class="content_frame_sub">
+                            <ul>
+                                <li class="wknd_rank_item">{{movie[1]}}</li>
+                                <li class="wknd_title_item">{{movie[2]}}</li>
+                                <li class="wknd_weekend_item">{{movie[3]}}</li>
+                                <li class="wknd_lifetime_item">{{movie[4]}}</li>
+                                <li class="wknd_studio_item">{{movie[5]}}</li>
+                            </ul>
+                        </div>
+
+                    {% endfor %}    
+                    
+                </div>
+            </div>
+{% endblock %}

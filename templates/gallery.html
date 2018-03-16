@@ -1,0 +1,56 @@
+{% extends "content_base.html" %}
+
+<!--css-->
+{% block navi_css %}
+    <link href="../static/css/gallery.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+<!--content_img-->
+{% block content_img %}
+    <img src="../static/images/gallery_background_img.jpg">
+{% endblock %}
+
+<!--content_header_title-->
+{% block content_header_title %}
+    <p class="title_gallery">GALLERY</p>
+{% endblock %}
+
+<!--content_header_description-->
+{% block content_header_description %}
+    <p>Build you own movie gallery here</p>
+{% endblock %}
+      
+
+<!--content_detail-->
+{% block content_detail %}
+<div class="gallery_detail">
+    <div class="gallery_welcome">
+        <p>Welcome {{username}}</p>
+    </div>
+    
+    <div class="log_out">
+        <p><a class="log_out_a" href="/logout">LOGOUT</a></p>
+    </div>
+    
+    <div class="gallery_movie_list">
+        {% for movie in movies %}
+            <div class="gallery_movie_info">
+                {% set src = "../static/images/posters/" + movie[1] + ".jpg" %}
+                <div class="movie_poster">
+                    <a href="/movie/{{movie[1]}}"><img src={{src}}></a>
+                </div>
+            
+                <div class="movie_name">
+                    <p><a href="/movie/{{movie[1]}}">{{movie[3]}}</a></p>
+                </div>
+            
+                <div class="add_time">
+                    <p>{{movie[2]}}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+</div>
+
+{% endblock %}

@@ -1,0 +1,169 @@
+body, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center, li, ul, ol, hr,
+fieldset, form, label, legend, input,
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+  margin: 0;  
+  padding: 0;  
+  border: 0;  
+  font: inherit;  
+  font-size: 100%;  
+  vertical-align: baseline;  
+}
+
+body {
+    user-select: none;
+}
+/*about*/
+.navi_about a {
+    color: #002B4C;
+}
+
+.title_about {
+    color: snow;
+}
+
+.title_us {
+    color: #FFD459;
+}
+/*CONTENT*/
+.the_team {
+    width: 70%;
+    height: 60px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    border-bottom: 2px solid #FFD459;
+}
+
+.the_team p {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.team_profile {
+    width: 70%;
+    height: 600px;
+    margin: auto;
+    margin-top: 60px;
+    /*background-color: beige;*/
+}
+
+.team_member {
+    width: 25%;
+    height: 700px;
+    float: left;
+}
+
+.member_pic {
+    width: 70%;
+    height: 250px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.member_pic img {
+    width: 100%;
+    height: 100%;
+    margin: auto;    
+}
+
+.member_name {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    /*background-color: coral;*/
+}
+
+.member_name p {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.member_title {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    /*background-color: aqua;*/
+}
+
+.member_title p {
+    color: #002B4C;
+    font-weight: bolder;
+}
+
+.member_description {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.contact_us {
+    width: 70%;
+    height: 800px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #002B4C; /*#FFD459*/
+}
+
+.contact_us_title {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    color: #FFD459;
+}
+
+.contact_us_address {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 60px;
+    font-size: 30px;
+    text-align: center;
+    color: #FFD459;
+}
+
+.contact_us_information {
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.contact_us_information input {
+    width: 500px;
+    height: 40px;
+    text-indent: 5px;
+    margin-top: 15px;
+    outline: 0;
+}
+
+.contact_us_submit {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.contact_us_submit input {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #FFD459;
+    color: #002B4C;
+}

@@ -1,0 +1,221 @@
+* {  
+  margin: 0;  
+  padding: 0;  
+  border: 0;  
+  font: inherit;  
+  font-size: 100%;  
+  vertical-align: baseline;  
+}
+
+/*Movie detail section*/
+.movie_detail_content {
+    width: 1024px;
+    height: auto;
+    margin: auto;
+    user-select: none;
+}
+
+.movie_detail_title {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 3em;
+    background-color: #FFD459;
+}
+
+.movie_detail_title p {
+    font-size: 3em;
+    font-weight: bold;
+    margin-left: 1em;
+    color: #002B4C;
+}
+
+.movie_detail_poster_info {
+    width: 90%;
+    height: 30em;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.movie_detail_poster {
+    width: 19em;
+    height: 28em;
+    float: left;
+    margin-left: 1em;
+}
+
+.movie_detail_poster img {
+    width: 100%;
+    height: 100%;
+}
+
+.movie_detail_info {
+    width: 37em;
+    height: 28em;
+    float: left;
+}
+
+.movie_detail_info p {
+    margin-left: 6em;
+    margin-top: 0.5em;
+    font-size: 1.3em;
+    color: #002B4C;
+}
+
+.movie_detail_score {
+    width: 90%;
+    height: 4em;
+    margin: auto;
+    text-align: center;
+    background-color: #002B4C;
+}
+
+.movie_detail_score p {
+    float:left;
+    padding-top: 0.7em;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 2em;
+    color: snow;
+}
+
+.movie_detail_info a, a:active, a:checked {
+    text-decoration: none;
+    color: #002B4C;
+}
+
+.movie_detail_info a:hover {
+    text-decoration: underline;
+}
+
+/*This is the section for movie plot*/
+.movie_plot {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background-color: #FFD459;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.movie_plot p {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.3em;
+    color: #002B4C;
+}
+
+.movie_plot .title {
+    padding-bottom: 0.5em;
+    font-size: 1.5em;
+    color: #002B4C;
+}
+
+.comments_input {
+    width: 100%;
+    height: 21.5em;
+    margin: auto;
+    margin-top: 3em;
+    border-top: 0.4em solid #FFD459;
+}
+
+.input_area {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 2em;
+}
+
+.input_textarea {
+    width: 100%;
+    height: 8em;
+    font-size: 1.8em;
+    border: 0.08em solid #002B4C;
+    outline: none;
+}
+
+.submit_button {
+    width: 5em;
+    height: 2em;
+    float: right;
+    margin-top: 1em;
+    margin-right: 1em;
+    outline: none;
+    border: 0.05em solid #002B4C;
+}
+
+.short_comments {
+    width: 100%;
+    height: auto;
+}
+
+.short_comments p {
+    font-size: 2em;
+    margin-top: 0.8em;
+    color: #002B4C;
+}
+/*Loading comments from database*/
+.comments {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.comment {
+    height: auto;
+    width: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 0.15em solid lightgray;
+}
+
+.comment_content {
+    padding-top: 1em;
+}
+
+.comment_content p {
+    font-size: 1.5em;
+    color: black;
+}
+
+.comment_user {
+    width: 100%;
+    height: auto;
+}
+
+.comment_time {
+    color: gray;
+}
+
+.user {
+    color: #002B4C;
+}
+
+.movie_watched_button {
+    width: 90%;
+    height: 4em;
+    margin:auto;
+}
+
+.movie_watched_button input {
+    height: 2em;
+    width: 8em;
+    margin-left: 1em;
+    font-size: 1.2em;
+    background-color: #FFD459;
+}
+
+.disabledbutton {
+    width: 90%;
+    height: 4em;
+    margin:auto;
+}
+
+.disabledbutton input {
+    height: 2em;
+    width: 8em;
+    margin-left: 1em;
+    font-size: 1.2em;
+    background-color: lightgray;
+}

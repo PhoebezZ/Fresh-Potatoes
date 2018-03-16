@@ -1,0 +1,212 @@
+* {  
+  margin: 0;  
+  padding: 0;  
+  border: 0;  
+  font: inherit;  
+  font-size: 100%;  
+  vertical-align: baseline;  
+}
+
+/* Opening this week section */
+.in_theater_movies {
+    width: 1024px; /*Setting to 1024 in order to fullfill different screen size*/
+    height: auto;
+    margin: auto;
+}
+
+.new_in_theater_title {
+    width: auto;
+    height: auto;
+    margin-top: 2em;
+    background-color: #FFD459;
+}
+
+.new_in_theater_title p {
+    color: #002B4C;
+    display: inline-block;
+    background-color: white;
+    font-weight: bold;
+    margin-left: 1.5em;
+    font-size: 1.5em;
+}
+
+.new_in_theater_movies {
+    width: auto;
+    height: 20em;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+
+}
+
+.new_in_theater_movies_item {
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+.new_in_theater_movies_img {
+    width: 90%;
+    height: 16em;
+    margin: auto;
+}
+
+.new_in_theater_movies_img img {
+    height: 100%;
+    width: 100%;
+}
+
+.new_in_theater_movies_title {
+    height: auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 0.3em;
+    text-align: center;
+}
+
+.new_in_theater_movies_title p {
+    color: #002B4C;
+    font-size: 1.2em;
+}
+
+/*Top Box office movies section*/
+
+.top_office_movies {
+    width: 1024px;
+    height: auto;
+    margin: auto;
+}
+
+.top_office_movies_title {
+    width: auto;
+    height: auto;
+    background-color: #FFD459;
+}
+
+.top_office_movies_title p {
+    display: inline-block;
+    background-color: white;
+    font-weight: bold;
+    margin-left: 1.5em;
+    font-size: 1.5em;
+    color: #002B4C;
+}
+
+.top_movies {
+    width: auto;
+    height: 22em;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.top_movies_item {
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+.top_movies_item_img {
+    width: 90%;
+    height: 16em;
+    margin: auto;
+}
+
+.top_movies_item_img img {
+    height: 100%;
+    width: 100%;
+}
+
+.top_movies_title {
+    height: auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 0.3em;
+    text-align: center;
+}
+
+.top_movies_title p {
+    font-size: 1.2em;
+    color: #002B4C;
+}
+
+.top_movies_title a, a:hover, a:active, a:checked {
+    text-decoration: none;
+    color: #002B4C;
+}
+
+.top_movies_boxoffice {
+    height: auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 0.3em;
+    text-align: center;
+}
+
+.top_movies_boxoffice p {
+    font-size: 1.2em;
+    color: #002B4C;
+}
+
+.new_in_theater_movies_item a, a:hover, a:active, a:checked {
+    text-decoration: none;
+    color: #002B4C;
+}
+
+/* Editor recommend section */
+.editor_recommend {
+    width: 1024px;
+    height: auto;
+    margin: auto;
+}
+
+.editor_recommend_title {
+    width: auto;
+    height: auto;
+    margin-top: 2em;
+    background-color: #FFD459;
+}
+
+.editor_recommend_title p {
+    color: #002B4C;
+    display: inline-block;
+    background-color: white;
+    font-weight: bold;
+    margin-left: 1.5em;
+    font-size: 1.5em;
+}
+
+.editor_content {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 1%;
+    background-color: black;
+}
+
+.oscar_img{
+    width: 20em;
+    height: 12em;
+    float: left;
+}
+
+.oscar_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.oscar_movies {
+    width: 100%;
+    height: 12em;
+}
+
+.oscar_movies p {
+    font-size: 1.2em;
+    padding-top: 0.5em;
+    color: #FFEC8B;
+}
+
+.oscar_movies a, a:hover, a:active, a:checked {
+    text-decoration: none;
+    color: #FFEC8B;
+}

@@ -1,0 +1,48 @@
+{% extends "boxoffice.html" %}
+
+<!--category css-->
+
+<!--detail-->
+{% block threepages %}
+
+<div class="box_office_detail">
+                <div class="bod_header">
+                    <ul>
+                        <li class="rank">RANK</li>
+                        <li class="title">TITLE</li>
+                        <li class="lifetime_gross">LIFETIME GROSS</li>
+                        <li class="studio">STUDIO</li>
+                        <li class="year">YEAR</li>
+                    </ul>
+                </div>
+                
+                <div class="bod_content">
+                    <!--id, rank, title, lifetimegross, studio, year, onshow, fpID-->
+                    {% for movie in movies %}
+                        <!--Movie is in theater-->
+                        {% if movie[6] == 1 %}
+                            <div class="content_frame_sub_intheatre">
+                                <ul>
+                                    <li class="rank_item">{{movie[1]}}</li>
+                                    <li class="title_item">{{movie[2]}}</li>
+                                    <li class="lifetime_gross_item">{{movie[3]}}</li>
+                                    <li class="studio_item">{{movie[4]}}</li>
+                                    <li class="year_item">{{movie[5]}}</li>
+                                </ul>
+                            </div>
+                        {% else %}
+                            <div class="content_frame_sub">
+                                <ul>
+                                    <li class="rank_item">{{movie[1]}}</li>
+                                    <li class="title_item">{{movie[2]}}</li>
+                                    <li class="lifetime_gross_item">{{movie[3]}}</li>
+                                    <li class="studio_item">{{movie[4]}}</li>
+                                    <li class="year_item">{{movie[5]}}</li>
+                                </ul>
+                            </div>
+                        {% endif %}
+                    {% endfor %}    
+                    
+                </div>
+            </div>
+{% endblock %}

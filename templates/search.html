@@ -1,0 +1,48 @@
+{% extends "content_base.html" %}
+
+<!--css-->
+{% block navi_css %}
+    <link href="../static/css/search.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+<!--content_img-->
+{% block content_img %}
+    <img src="../static/images/genre_background_img.jpg">
+{% endblock %}
+
+<!--content_header_title-->
+{% block content_header_title %}
+    <p class="title_genre">SEARCH</p>
+{% endblock %}
+
+<!--content_header_description-->
+{% block content_header_description %}
+    <p>Find your movie here</p>
+{% endblock %}
+
+<!--content_detail-->
+{% block content_detail %}
+    <!--Editor recommend movies-->
+<div class="search_content">
+    <form action="../search" method="post" class="search_form">
+        <input type="text" class="search_input" name="search_bar" value="{{movie_name}}"/>
+        <input class="search_button" type="submit" value="SEARCH"/>
+    </form>
+
+    <div class="search_movie">
+        {% for movie in movies %}
+            <div class="movie_container">
+                <div class="movie_poster">
+                    {% set img = "../static/images/posters/" + movie[1] + ".jpg" %}
+                    <a href="/movie/{{movie[1]}}"><img src="{{img}}"></a>
+                </div>
+        
+                <div class="movie_name">
+                    <p><a href="/movie/{{movie[1]}}">{{movie[0]}}</a></p>
+                </div>
+        
+            </div>  
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

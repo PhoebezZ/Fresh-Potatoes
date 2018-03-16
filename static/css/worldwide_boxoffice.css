@@ -1,0 +1,53 @@
+* {  
+  margin: 0;  
+  padding: 0;  
+  border: 0;  
+  font: inherit;  
+  font-size: 100%;  
+  vertical-align: baseline;  
+}
+
+body {
+    user-select: none;
+}
+
+/*box_office_detail*/
+.box_office_detail {
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*background-color: beige;*/
+}
+
+/*content*/
+.wwd_movie_title {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    background-color: bisque;
+}
+
+.wwd_movie_item {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    background-color: azure;
+    margin-top: 1em;
+}
+
+.wwd_movie_title ul li{
+    display: inline;
+    text-decoration: none;
+    margin:2em;
+}
+
+.wwd_movie_item ul li {
+    display: inline;
+    text-decoration: none;
+    margin-left: 2em;
+}

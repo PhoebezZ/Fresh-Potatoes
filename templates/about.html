@@ -1,0 +1,131 @@
+{% extends "content_base.html" %}
+
+<!--css-->
+{% block navi_css %}
+    <link href="../static/css/about.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+<!--content_img-->
+{% block content_img %}
+    <img src="../static/images/about_background_img.jpg">
+{% endblock %}
+
+<!--content_header_title-->
+{% block content_header_title %}
+    <p class="title_about">ABOUT&nbsp;</p>
+    <p class="title_us">&nbsp;US</p>
+{% endblock %}
+
+<!--content_header_description-->
+{% block content_header_description %}
+    <p>We are four fanatical movie fans.</p>
+{% endblock %}
+
+<!--content_detail-->
+{% block content_detail %}
+            
+            <div class="the_team">
+                <p>THE&nbsp;TEAM</p>
+            </div>
+            
+            <div class="team_profile">
+                <div class="team_member">
+                    <div class="member_pic">
+
+                    </div>
+                    
+                    <div class="member_name">
+                        <p>HAORAN</p>
+                        <p>LIANG</p>
+                        <p>"HARLAN"</p>
+                    </div>
+                    
+                    <div class="member_title">
+                        <p>Back-end Developer</p>
+                    </div>
+                    
+                </div>
+                
+                <div class="team_member">
+                    <div class="member_pic">
+
+                    </div>
+                            
+                    <div class="member_name">
+                        <p>LI</p>
+                        <p>JIANG</p>
+                        <p>"PHEOBE"</p>
+                    </div>
+                    
+                    <div class="member_title">
+                        <p>Back-end Developer</p>
+                    </div>
+                    
+                </div>
+                
+                <div class="team_member">
+                    <div class="member_pic">
+  
+                    </div>
+                    
+                    <div class="member_name">
+                        <p>WEIYI</p>
+                        <p>XIA</p>
+                        <p>"CAIM"</p>
+                    </div>
+
+                    <div class="member_title">
+                        <p>Front-end Developer</p>
+                    </div>
+
+                </div>
+                
+                <div class="team_member">
+                    <div class="member_pic">
+
+                    </div>
+                    
+                    <div class="member_name">
+                        <p>XUANYI</p>
+                        <p>ZHANG</p>
+                        <p>"PHILIP"</p>
+                    </div>
+                    
+                    <div class="member_title">
+                        <p>Front-end Developer</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            <form action="/about" method="post" class="contact_us">
+                <div class="contact_us_title">
+                    <p>CONTACT&nbsp;US</p>
+                </div>
+                
+                <div class="contact_us_address">
+                    <p>1156 High St, Santa Cruz, CA 95064</p>
+                </div>
+                
+                <div class="contact_us_information">
+                    <input type="text" name = "email" placeholder="Email*"><br/>
+                    <input type="text" name = "name" placeholder="Name*"><br/>
+                    <input type="text" name = "subject" placeholder="Subject"><br/>
+                    <input type="textarea" name = "message" placeholder="Message"><br/>
+                </div>
+                
+                <div class="contact_us_submit">
+                    <input type="submit" value="SUBMIT">
+                </div>
+                
+            </form>
+
+
+<div class="footer">
+    <div class="footer_footer">
+        <div class="copyright">
+            <p>&copy;CMPS183 TEAM HPPH</p>
+        </div>
+    </div>
+</div> 
+{% endblock %}

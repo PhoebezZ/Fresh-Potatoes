@@ -1,0 +1,90 @@
+* {  
+  margin: 0;  
+  padding: 0;  
+  border: 0;  
+  font: inherit;  
+  font-size: 100%;  
+  vertical-align: baseline;  
+}
+
+body {
+    user-select: none;
+}
+/*search*/
+.navi_genre a {
+    color: #002B4C;
+}
+
+.title_genre {
+    color: snow;
+}
+
+.search_content {
+    width: 1024px;
+    margin: auto;
+}
+/*search bar*/
+.search_form {
+    width: 76%;
+    height: auto;
+    margin: auto;
+    margin-top: 5em;
+}
+
+.search_input {
+    height: 1.8em;
+    width: 20em;
+    font-size: 1.8em;
+    text-indent: 0.5em;
+    outline: none;
+    border: 0.08em solid #002B4C;
+}
+
+.search_button {
+    height: 1.8em;
+    margin-left: 1.5em;
+    width: 5em;
+    font-size: 1.8em;
+    border: 0.08em solid #002B4C;
+    background-color: #FFEC8B;
+}
+
+/*movie result*/
+.search_movie {
+    width: 100%;
+    padding-top: 2em;
+    margin: auto;
+}
+
+.movie_container {
+    width: 25%; /*Each row will has 4 movies matching search content*/
+    height: 27em;
+    float: left;
+    border-bottom: 0.5em solid #FFEC8B;
+}
+
+.movie_poster {
+    padding-left: 5%;
+    padding-top: 10%;
+    width: 90%;
+    height: 21em;
+}
+
+.movie_poster img {
+    height: 100%;
+    width: 100%;
+}
+
+.movie_name {
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+.move_name p {
+    font-size: 1.8em;
+}
+
+.movie_name a, a:active, a:hover, a:checked {
+    text-decoration: none;
+    color: #002B4C;
+}

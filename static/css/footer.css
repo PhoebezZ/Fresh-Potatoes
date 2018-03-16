@@ -1,0 +1,35 @@
+* {  
+  margin: 0;  
+  padding: 0;  
+  border: 0;  
+  font: inherit;  
+  font-size: 100%;  
+  vertical-align: baseline;  
+}
+
+body {
+    user-select: none;
+}
+
+/*--footer--*/
+
+.footer {
+    height: 100px;
+    width: 100%;
+    margin-top: 10em;
+    background-color: #002B4C;
+}
+
+.footer_footer {
+    height: 100%;
+    width: 1152px;
+    margin:auto;
+}
+
+.footer .copyright {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 1.2em;
+    color: snow;
+}
+

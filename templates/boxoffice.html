@@ -1,0 +1,46 @@
+{% extends "content_base.html" %}
+
+<!--css-->
+{% block navi_css %}
+    <link href="../static/css/boxoffice.css" rel="stylesheet" type="text/css">
+    <!--css file for three different category-->
+
+{% endblock %}
+
+<!--content_img-->
+{% block content_img %}
+    <img src="../static/images/box_office_header.jpg">
+{% endblock %}
+
+<!--content_header_title-->
+{% block content_header_title %}
+    <p class="title_box">BOX&nbsp;</p>
+    <p class="title_office">&nbsp;OFFICE</p>
+{% endblock %}
+
+<!--content_header_description-->
+{% block content_header_description %}
+    <p>Check out weekend box office, all time domestic and worldwide box office</p>
+{% endblock %}
+
+
+<!--content_detail-->
+{% block content_detail %}
+
+    <div class="cate_item">
+        <ul>
+            <li><a href="/boxoffice/domestic" style="color: black;">Domestic</a></li>
+            <li><a href="/boxoffice/worldwide" style="color: black;">Worldwide</a></li>
+            <li> <a href="/boxoffice/weekend" style="color: black;">Weekend</a></li>
+        </ul>
+    </div>
+
+    <!--Update information:-->
+    <!--Set this file as base-->
+    <!--3 sub pages: weekend, worldwide, domestic-->
+
+    {% block threepages %}
+
+    {% endblock %}
+
+{% endblock %}

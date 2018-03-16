@@ -1,0 +1,121 @@
+{% extends "content_base.html" %}
+
+<!--css-->
+{% block navi_css %}
+    <link href="../static/css/ticket.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+<!--content_img-->
+{% block content_img %}
+    <img src="../static/images/ticket_background_img.jpg">
+{% endblock %}
+
+<!--content_header_title-->
+{% block content_header_title %}
+    <p class="title_tickets">TICKETS</p>
+{% endblock %}
+
+<!--content_header_description-->
+{% block content_header_description %}
+   <p>With our movie ticket generator, you can create your own amazing movie tickets</p>
+{% endblock %}
+
+<!--content_detail-->
+{% block content_detail %}
+    
+<div class="movie_ticket">
+    
+      <div class="sidebar_links">
+          <input class="Name" id="iName" type="text" style="font-family: testfont;" name="Name" placeholder="Seat" />
+    
+          <input class="Row" id="iRow" type="text" style="font-family: testfont;" name="Row" placeholder="Row" />
+
+          <input class="Section" id="iSection" type="text" style="font-family: testfont;" name="Section" placeholder="Section" />
+
+          <div class="Signature">
+            <p style="font-family: testfont;">X&nbsp;&nbsp;&nbsp;</p>
+          </div>
+      </div>
+          
+    <div class="movie_detail">
+        <div class="movie">
+            <input class="movie_name" id="iMovieName" type="text" style="font-family: testfont;" name="Movie Name" placeholder="MOVIE NAME" />
+        </div>
+
+        <div class="Auditorium_name">
+            <input id="iTime" type="text" style="font-family: testfont;" name="Time" placeholder="AUDITORIUM"/>
+        </div>
+    
+        <div class="Seat_number">
+            <input id="iTime" type="text" style="font-family: testfont;" name="Time" placeholder="SEAT"/>
+        </div>
+        
+        <div class="Time">
+            <input id="iTime" type="text" style="font-family: testfont;" name="Time" placeholder="Time"/>
+        </div>
+        
+        <div class="Theatre_name">
+            <input id="ithreatre" type="text" style="font-family: testfont;" name="Time" placeholder="THEATRE NAME"/>
+        </div>
+
+
+    
+
+    </div> 
+</div>
+      
+      
+    <section>
+        <article>
+          <p>Cutting Line: please cut down black part!</p>
+          <button id="renderPdf">DOWNLOAD PDF</button>
+        </article>
+    </section>
+    <script type="text/javascript" src="../static/js/html2canvas.js"></script>
+    <script type="text/javascript" src="../static/js/jsPdf.debug.js"></script>
+    <script type="text/javascript">
+
+      var downPdf = document.getElementById("renderPdf");
+
+      downPdf.onclick = function() {
+          html2canvas(document.body, {
+              onrendered:function(canvas) {
+
+                  var contentWidth = canvas.width;
+                  var contentHeight = canvas.height;
+
+                  //一页pdf显示html页面生成的canvas高度;
+                  var pageHeight = contentWidth;
+                  //未生成pdf的html页面高度
+                  var leftHeight = contentHeight;
+                  //pdf页面偏移
+                  var position = 0;
+                  //a4纸的尺寸[595.28,841.89]，html页面生成的canvas在pdf中图片的宽高
+                  var imgWidth = 555.28;
+                  var imgHeight = 555.28/contentWidth * contentHeight;
+
+                  var pageData = canvas.toDataURL('image/jpeg', 1.0);
+
+                  var pdf = new jsPDF('', 'pt', 'a4');
+                  //有两个高度需要区分，一个是html页面的实际高度，和生成pdf的页面高度(841.89)
+                  //当内容未超过pdf一页显示的范围，无需分页
+                  if (leftHeight < pageHeight) {
+                      pdf.addImage(pageData, 'JPEG', 20, 0, imgWidth, imgHeight );
+                  } else {
+                      while(leftHeight > 0) {
+                          pdf.addImage(pageData, 'JPEG', 20, position, imgWidth, imgHeight)
+                          leftHeight -= pageHeight;
+                          position -= 841.89;
+                          //避免添加空白页
+                          if(leftHeight > 0) {
+                              pdf.addPage();
+                          }
+                      }
+                  }
+
+                  pdf.save('content.pdf');
+              }
+          })
+      }
+    </script>
+{% endblock %}

@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block css_content %}
+    <link href="../static/css/Index.css" rel="stylesheet" type="text/css">
+{% endblock %} 
+
+{% block content %}
+<!--extends template file-->
+<!--block content/ content / endblock-->
+
+<!--A section showing in theater movies-->
+<div class="in_theater_movies">
+    <div class="new_in_theater_title">        
+        <p>&nbsp;OPENING THIS WEEK&nbsp;</p>
+    </div>
+    
+    <div class="new_in_theater_movies">
+        
+        {% for movie in Omovies %}
+        <!--Should create from database-->
+        <div class="new_in_theater_movies_item">
+            <div class="new_in_theater_movies_img">
+                {% set src = "../static/images/posters/"+ movie[0] + ".jpg" %}
+                <a href="/movie/{{movie[0]}}"><img src={{src}}></a>
+            </div>
+            
+            <div class="new_in_theater_movies_title"><a href="/movie/{{movie[0]}}">
+                <p>{{movie[1]}}</p></a>
+            </div>
+        </div>
+        {% endfor %}
+        
+    </div>
+</div>
+
+<!--A section showing top box office movies-->
+<div class="top_office_movies">
+    <div class="top_office_movies_title">        
+        <p>&nbsp;TOP BOX OFFICE&nbsp;</p>
+    </div>
+    
+    <div class="top_movies">
+        {% for tmovie in Tmovies %}
+        <!--Should create from database-->
+        <div class="top_movies_item">
+            <div class="top_movies_item_img">
+                {% set tsrc = "../static/images/posters/"+ tmovie[0] + ".jpg" %}
+                <a href="/movie/{{tmovie[0]}}"><img src={{tsrc}}></a>
+            </div>
+            
+            <div class="top_movies_title"><a href="/movie/{{tmovie[1]}}">
+                <p>{{tmovie[1]}}</p></a>
+            </div>
+            
+            <div class="top_movies_boxoffice">
+                <p>{{tmovie[2]}}</p>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+<!--A section showing editor recommendation-->
+<div class="editor_recommend">
+    <div class="editor_recommend_title">        
+        <p>&nbsp;EDITOR RECOMMEND&nbsp;</p>
+    </div>
+    
+    <!--For this part, is editing by admin-->
+    <div class="editor_content">
+        <div class="oscar_img">
+            <img src="../static/images/editors/oscars.jpg">
+        </div>
+        
+        <div class="oscar_movies">
+            <p>BEST PICTURE: <a href="/movie/fp109">The Shape of Water</a></p>
+            <p>BEST ACTOR: <a href="/movie/fp114">Darkest Hour</a></p>
+            <p>BEST ACTRESS: <a href="/movie/fp111">Three Billboards Outside Ebbing, Missouri</a></p>
+            <p>BEST ANIMATED: <a href="/movie/fp126">Coco</a></p>
+            <p>BEST ORIGINAL: <a href="/movie/fp127">Get Out</a></p>
+        </div>
+    </div>
+        
+        
+        
+            
+    <!--Need to create a management platform for editor passages-->
+</div>
+
+
+<div class="footer">
+    <div class="copyright">
+        <p>&copy;CMPS183 TEAM HPPH</p>
+    </div>
+</div> 
+{% endblock %}

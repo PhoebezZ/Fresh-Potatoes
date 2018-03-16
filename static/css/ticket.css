@@ -1,0 +1,226 @@
+* {  
+  margin: 0;  
+  padding: 0;  
+  border: 0;  
+  font: inherit;  
+  font-size: 100%;  
+  vertical-align: baseline;  
+}
+
+body {
+    user-select: none;
+}
+/*ticket*/
+.navi_ticket a {
+    color: #002B4C;
+}
+
+.title_tickets {
+    color: snow;
+}
+
+/*ticket content part*/
+      @font-face {  
+            font-family: testfont;  
+            src: url("../static/font/Kraketaer-Regular.otf") /* EOT file for IE */  
+      }  
+
+    .movie_ticket {
+        margin-top: 100px;
+        width: 1280px;
+        height: 350px;
+        margin: auto;
+        background-color: #FFD459;
+        border: 7px solid #002B4C;
+      }
+      header, section {
+          overflow: hidden;
+      }
+      ul {
+        margin: 0;
+        border: 0;
+        padding: 0;
+      }
+      
+      
+      aside {
+        width: 20%;
+        float: left;
+        text-align: center;
+      }
+
+      aside a {
+        display: block;
+        height: 4em;
+        color: blue;
+      }
+
+
+  .sidebar_links {
+    display: inline;
+    float: right;
+    margin: auto;
+    display: inline-block;
+    height: 340px;
+    width: 25%;
+    margin-left: 2%;
+    border-left: 7px dotted #002B4C;
+  }
+
+.sidebar_note {
+    width: 250px;
+    height: 435px;
+    margin-top: 150px;
+  
+}
+
+.sidebar_note p {
+  font-weight: bold;
+  color: #9F5000;
+  font-size: 50px;
+  background-color: #FFD459;
+  border-radius: 8px;
+
+}
+
+.Name {
+        font-size: 19px;
+        margin-top: 60%;
+        margin-left: -5%;
+        border: none;
+        transform: rotate(-90deg);
+        background-color: #FFD459;
+        width: 30%;
+        color: #002B4C;
+}
+
+.Section {
+        font-size: 19px;
+        margin-left: -15%;
+        margin-top: -20%;
+        vertical-align: center;
+        transform: rotate(-90deg);
+        border: none;
+        background-color: #FFD459;
+        width: 30%;
+        color: #002B4C;
+      }
+
+.Row {
+    font-size: 19px;
+    margin-top: 13%;
+    margin-left: -15%;
+    transform: rotate(-90deg);
+    border: none;
+    background-color: #FFD459;
+    width: 30%;
+    color: #002B4C;
+}
+
+.Signature p {
+  border-bottom: solid;
+  margin-top: 30%;
+  margin-left: 3%;
+  width: 90%;
+}
+
+    .Time input{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 25px;
+                    font-size: 20px;
+            border: none;
+            background-color: #FFD459;
+    }
+
+    .movie {
+        width: 100%;
+        height: auto;
+        background-color: #FFD459;
+    }
+        
+    .movie_name {
+        width: 100%;
+        font-size: 80px;
+        border: 1px solid #002B4C;
+        text-align: center;
+    }
+        .movie input {
+            border: none;
+            background-color: #FFD459;
+        }
+
+        .Theatre_name {
+            width: 40%;
+            height: 40px;
+            margin: auto;
+            margin-top: 20px;
+            background-color: #FFD459;
+        }
+        
+        .Theatre_name input {
+            height: 40px;
+            width: 400px;
+            font-size: 35px;
+                        font-size: 20px;
+            border: none;
+            background-color: #FFD459;
+        }
+        
+    .address input {
+        font-size: 19px;
+        width: 60%;
+        margin-top: 3%;
+        margin-left: 5%;
+        background-color: #FFD459;
+        border: none;
+        color: #80FFFF;
+    }
+    
+.movie_detail {
+    width: 800px;
+    height: auto;
+    margin-left: 77px;
+    margin-top: 45px;
+    background-color: #FFD459;
+}
+
+      article {
+        padding: 2em 0;
+        width: 80%;
+        float: left;
+        margin-top: 80px;
+      }
+
+      article p {
+        color: red;
+      }
+      
+        .Auditorium_name {
+            width: 20px;
+            height: 10px;
+            margin-left: 20px;
+            margin-top: 25px;
+            background-color: #FFD459;
+        }
+        
+        .Auditorium_name input {
+            font-size: 20px;
+            border: none;
+            background-color: #FFD459;
+        }
+        
+        .Seat_number {
+            width: 20px;
+            height: 10px;
+            margin-left: 20px;
+            margin-top: 25px;
+            background-color: #FFD459;
+        }
+        
+        .Seat_number input {
+            font-size: 20px;
+            border: none;
+            background-color: #FFD459;
+        }
+        

@@ -1,0 +1,64 @@
+{% extends "boxoffice.html" %}
+
+<!--category css-->
+
+{% block threepages %}
+
+    <div class="box_office_detail">
+                <div class="bod_header_ww">
+                    <ul>
+                        <li class="ww_rank">RANK</li>
+                        <li class="ww_title">TITLE</li>
+                        <li class="ww_gross">GROSS</li>
+                        <li class="ww_domestic">DOMESTIC</li>
+                        <li class="ww_do_percent">%</li>
+                        <li class="ww_oversea">OVERSEA</li>
+                        <li class="ww_os_percent">%</li>
+                        <li class="ww_studio">STUDIO</li>
+                        <li class="ww_year">YEAR</li>
+                    </ul>
+                </div>
+                
+
+
+                <div class="bod_content">
+                    {% for movie in movies %}
+                        <!--id, rank, title, lifetimegross, dgross, dpercent, ogross, opercent studio, year, onshow-->
+                        {% if movie[10] == 1%}
+                            <div class="content_frame_sub_intheatre">
+                            <ul>
+                                <li class="ww_rank_item">{{movie[1]}}</li>
+                                <li class="ww_title_item">{{movie[2]}}</li>
+                                <li class="ww_gross_item">{{movie[3]}}</li>
+                                <li class="ww_domestic_item">{{movie[4]}}</li>
+                                <li class="ww_do_percent_item">{{movie[5]}}</li>
+                                <li class="ww_oversea_item">{{movie[6]}}</li>
+                                <li class="ww_os_percent_item">{{movie[7]}}</li>
+                                <li class="ww_studio_item">{{movie[8]}}</li>
+                                <li class="ww_year_item">{{movie[9]}}</li>
+                            </ul>
+                        </div>
+                        {% else %}
+                            <div class="content_frame_ww">
+                            <ul>
+                                <li class="ww_rank_item">{{movie[1]}}</li>
+                                <li class="ww_title_item">{{movie[2]}}</li>
+                                <li class="ww_gross_item">{{movie[3]}}</li>
+                                <li class="ww_domestic_item">{{movie[4]}}</li>
+                                <li class="ww_do_percent_item">{{movie[5]}}</li>
+                                <li class="ww_oversea_item">{{movie[6]}}</li>
+                                <li class="ww_os_percent_item">{{movie[7]}}</li>
+                                <li class="ww_studio_item">{{movie[8]}}</li>
+                                <li class="ww_year_item">{{movie[9]}}</li>
+                            </ul>
+                        </div>
+                        {% endif %}
+                        
+                    {% endfor %}  
+                    
+                    
+            </div>
+        
+    </div>
+    
+{% endblock %}

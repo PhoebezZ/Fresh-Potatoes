@@ -1,0 +1,123 @@
+<!--movie_detail.html-->
+
+{% extends "base.html" %}
+
+<!--Header navigation-->
+{% block css_content %}
+    <link href="../static/css/movieDetail.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+
+
+{% block content %}
+<!--
+    [1]		fpid	
+   	[2] 	title	
+	[3] 	year
+	[4]		production
+	[5]		director
+	[6]		imdbID
+	[7]		metascore
+	[8]		imdbrating
+	[9]		rottenrating
+	[10]	plot
+	[11]	length
+	[12]	genre
+	[13]	country
+	[14]	rated
+	[15]	language
+-->
+
+    {% for movie in movies %}
+    <div class="movie_detail_content">
+        
+    	<div class="movie_detail_title">
+    		<p>{{movie[2]}}&nbsp;({{movie[3]}})</p>
+    	</div>
+        
+        <div class="movie_detail_poster_info">
+            
+            <!--movie detail poster-->
+    	   <div class="movie_detail_poster">
+               <img src={{src}}>
+    	   </div>
+            
+            <!--movie details information-->
+    	   <div class="movie_detail_info">
+               <p>Director:&nbsp;{{movie[5]}}</p>
+               <p>Genre:&nbsp;{{movie[12]}}</p>
+               <p>Country:&nbsp;{{movie[13]}}</p>
+               <p>Language:&nbsp;{{movie[15]}}</p>
+               <p>Year:&nbsp;{{movie[3]}}</p>
+               <p>Production:&nbsp;{{movie[4]}}</p>
+               <p>Rated:&nbsp;{{movie[14]}}</p>
+               {% set imdbsrc = "http://www.imdb.com/title/" + movie[6]%}
+               <p>IMDb:&nbsp;<a href="{{imdbsrc}}">{{movie[6]}}</a></p>
+    	   </div>
+            
+        </div>
+    	
+        {% if result[1] == movie[1] %}<!--Means user has not watched this movie-->
+        
+        <div class="disabledbutton">
+            <input type="button" value="WATCHED" disabled>
+        </div>
+        
+        {% else %} <!--User has watched the movie-->
+        
+        <div class="movie_watched_button">
+            <!--There should has some check logic-->
+            <form action="../watched/{{movie[1]}}" method="post">
+                <input type="text" value="{{movie[2]}}" name="movie_name" hidden="hidden">
+                <input type="submit" value="WATCHED" name="watchbutton">
+            </form>  
+        </div>
+        {% endif %}
+        
+    	<div class="movie_detail_score">
+            <p>MetaScore: {{movie[7]}}</p>
+            <p>Rotten Tomatoes: {{movie[9]}}</p>
+            <p>IMDB Rating: {{movie[8]}}</p>
+    	</div>
+        
+        <div class="movie_plot">
+            <p class="title">Storyline</p>
+            <p>{{movie[10]}}</p>
+        </div>
+        
+        <div class="comments_input">
+            <div class="input_area">
+                <form action="../movie/{{movie[1]}}" method="post">
+                    <textarea name="comment_text" class="input_textarea" rows="5" placeholder="Share your thought about the movie {{uid}}"></textarea>
+                    <input class="submit_button" type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div> 
+        
+        
+        <div class="short_comments">
+            <p>User Reviews</p>
+        </div>
+        
+        <!--loading comments from database-->
+        <div class="comments">
+            {% for comment in comments %}
+            <div class="comment">
+                
+                <div class="comment_user">
+                    <p class="user">{{comment[1]}}</p>
+                    <p class="comment_time">{{comment[3]}}</p>
+                </div>
+                
+                <div class="comment_content">
+                    <p>{{comment[2]}}</p>
+                </div>
+                
+            </div>   
+            {% endfor %}
+        </div>
+        
+    </div>
+    {% endfor %}
+        
+{% endblock %}

@@ -1,0 +1,111 @@
+* {  
+  margin: 0;  
+  padding: 0;  
+  border: 0;  
+  font: inherit;  
+  font-size: 100%;  
+  vertical-align: baseline;  
+}
+
+body {
+    user-select: none;
+}
+/*genre*/
+.navi_gallery a {
+    color: #002B4C;
+}
+
+.title_gallery {
+    color: snow;
+}
+
+.gallery_detail {
+    width: 1024px;
+    height: 100%;
+    margin: auto;
+}
+
+.log_out {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    background-color: #FFD459;
+}
+
+.log_out p {
+    text-align: center;
+}
+
+.log_out_a, .log_out_a:hover, .log_out_a:visited {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #002B4C;
+}
+
+.gallery_welcome {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-bottom: 0.2em solid #002B4C;
+}
+
+.gallery_welcome p {
+    font-size: 1.8em;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.gallery_movie_list {
+    width: 100%;
+    margin: auto;
+}
+
+/*for each movie*/
+.gallery_movie_info {
+    width: 20%;
+    height: 23em;
+    float: left;
+    margin-top: 2em;
+    border-bottom: 0.3em solid #FFD459;
+}
+
+.movie_poster {
+    width: 90%;
+    height: 17em;
+    margin: auto;
+}
+
+.movie_poster img {
+    width: 100%;
+    height: 100%;
+}
+
+.movie_name {
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    margin-top: 0.5em;
+}
+
+.movie_name p {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.movie_name a, a:hover, a:active, a:checked {
+    text-decoration: none;
+    color: black;
+}
+
+.add_time {
+    width: 80%;
+    height: 10%;
+    margin: auto;
+    margin-top: 0.8em;
+}
+
+.add_time p {
+    text-align: center;
+    font-size: 0.8em;
+}
